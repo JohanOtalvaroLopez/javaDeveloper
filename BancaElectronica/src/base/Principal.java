@@ -19,5 +19,8 @@ public class Principal {
 
         Cuenta cuenta2 = new CuentaDeCheque(8888, 99999999, 14500);
         System.out.println(cuenta2);
+
+        Cuenta cuenta3 = new CuentaDeCheque(7777, 11111111, 28700);
+        System.out.println(cuenta3);
     }
 }
