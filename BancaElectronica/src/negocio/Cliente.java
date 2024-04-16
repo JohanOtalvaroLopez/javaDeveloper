@@ -1,33 +1,36 @@
 package negocio;
 
-import java.util.ArrayList;
+import java.util.*;
 
 public class Cliente {
     private int numero;
     private String nombre;
+    private String apellido;
     private Domicilio domicilio;
     private String rfc;
     private String telefono;
     private ArrayList<Cuenta> cuentas;
     private String fechaNacimiento;
 
-    public Cliente(int numero, String nombre, String calle, String numeroDom, String colonia, String estado, String codigoPostal, String rfc, String telefono, String fechaNacimiento) {
+    public Cliente(int numero, String nombre, String apellido, Domicilio domicilio, String rfc, String telefono, String fechaNacimiento) {
         this.setNumero(numero);
         this.setNombre(nombre);
-        this.domicilio = new Domicilio(calle, numeroDom, colonia, estado, codigoPostal);
-        this.setRfc(rfc);
-        this.setTelefono(telefono);
-        this.cuentas = new ArrayList<>();
-        this.setFechaNacimiento(fechaNacimiento);
-    }
-
-    public Cliente(int numero, String nombre, Domicilio domicilio, String rfc, String telefono, String fechaNacimiento) {
-        this.setNumero(numero);
-        this.setNombre(nombre);
+        this.setApellido(apellido);
         this.setDomicilio(domicilio);
         this.setRfc(rfc);
         this.setTelefono(telefono);
-        this.cuentas = new ArrayList<>();
+        this.setCuentas(new ArrayList<>());
+        this.setFechaNacimiento(fechaNacimiento);
+    }
+
+    public Cliente(int num, String nombre, String apellido, String calle, String numero, String colonia, String estado, String codigoPostal, String rfc, String telefono, String fechaNacimiento) {
+        this.setNumero(num);
+        this.setNombre(nombre);
+        this.setApellido(apellido);
+        this.domicilio = new Domicilio(calle, numero, colonia, estado, codigoPostal);
+        this.setRfc(rfc);
+        this.setTelefono(telefono);
+        this.setCuentas(new ArrayList<>());
         this.setFechaNacimiento(fechaNacimiento);
     }
 
@@ -45,6 +48,14 @@ public class Cliente {
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
+    }
+
+    public String getApellido() {
+        return apellido;
+    }
+
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
     }
 
     public Domicilio getDomicilio() {
@@ -89,6 +100,14 @@ public class Cliente {
 
     @Override
     public String toString() {
-        return "Cliente{" + "numero=" + numero + ", nombre='" + nombre + '\'' + ", domicilio=" + domicilio + ", rfc='" + rfc + '\'' + ", telefono='" + telefono + '\'' + ", cuentas=" + cuentas + ", fechaNacimiento='" + fechaNacimiento + '\'' + '}';
+        return "Cliente{" +
+                "numero=" + numero +
+                ", nombre='" + nombre + '\'' +
+                ", apellido='" + apellido + '\'' +
+                ", domicilio=" + domicilio +
+                ", rfc='" + rfc + '\'' +
+                ", telefono='" + telefono + '\'' +
+                ", fechaNacimiento='" + fechaNacimiento + '\'' +
+                '}';
     }
 }

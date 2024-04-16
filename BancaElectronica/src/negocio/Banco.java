@@ -2,7 +2,7 @@ package negocio;
 
 import java.util.ArrayList;
 
-public class Banco {
+public class Banco implements ServicioClientes {
     private String nombre;
     private Domicilio domicilio;
     private String rfc;
@@ -65,11 +65,66 @@ public class Banco {
 
     @Override
     public String toString() {
-        return "Banco{" +
-                "nombre='" + nombre + '\'' +
-                ", domicilio=" + domicilio +
-                ", rfc='" + rfc + '\'' +
-                ", telefono='" + telefono + '\'' +
-                '}';
+        return "Banco{" + "nombre='" + nombre + '\'' + ", domicilio=" + domicilio + ", rfc='" + rfc + '\'' + ", telefono='" + telefono + '\'' + '}';
+    }
+
+    @Override
+    public boolean agregarCliente(Cliente cliente) {
+        clientes.add(cliente);
+        return true;
+    }
+
+    @Override
+    public boolean eliminarCliente(int numero) {
+        Cliente c = consultarCliente(numero);
+        if (c != null) {
+            clientes.remove(c);
+            System.out.println("Cliente número: " + numero + ", fue eliminado.");
+            System.out.println(c);
+            return true;
+        }
+        return false;
+    }
+
+    @Override
+    public Cliente consultarCliente(int numero) {
+        for (Cliente c : clientes) {
+            if (c.getNumero() == numero) {
+                System.out.println("Cliente: " + numero + ", fue encontrado.");
+                System.out.println(c);
+                return c;
+            }
+        }
+        // Pendiente el manejo de excepciones
+        System.out.println("Cliente: " + numero + ", NO fue encontrado.");
+        return null;
+    }
+
+    @Override
+    public ArrayList<Cliente> obtenerClientes() {
+        return clientes;
+    }
+
+    @Override
+    public Cliente buscarClientePorRfc(String rfc) {
+        for (Cliente c : clientes) {
+            if (c.getRfc() == rfc) {
+                System.out.println("Rfc: " + rfc + ", fue encontrado.");
+                System.out.println(c);
+                return c;
+            }
+        }
+        // Pendiente el manejo de excepciones
+        System.out.println("Rfc: " + rfc + ", NO fue encontrado.");
+        return null;
+    }
+
+    @Override
+    public void listarClientes() {
+        System.out.println("=".repeat(300));
+        for (Cliente c : clientes) {
+            System.out.println(c);
+        }
+        System.out.println("=".repeat(300));
     }
 }
