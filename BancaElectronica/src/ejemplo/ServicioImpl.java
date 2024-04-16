@@ -8,7 +8,7 @@ public class ServicioImpl implements Servicio {
 
     @Override
     public double metodo1(int a) {
-        System.out.println("Implementacion del metodo abstracto 2");
+        System.out.println("Implementacion del metodo abstracto 2: " + a);
         return 0;
     }
 
