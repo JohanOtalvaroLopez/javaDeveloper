@@ -2,7 +2,7 @@ package negocio;
 
 import java.util.*;
 
-public class Cliente {
+public class Cliente implements ServicioCuentas {
     private int numero;
     private String nombre;
     private String apellido;
@@ -111,5 +111,40 @@ public class Cliente {
                 '}';
     }
 
+
+    @Override
+    public boolean agregarCuenta(Cuenta cuenta) {
+        cuentas.add(cuenta);
+        return true;
+    }
+
+    @Override
+    public boolean cancelarCuenta(int numero) {
+        return false;
+    }
+
+    @Override
+    public void abonarCuenta(int numero, double abono) {
+
+    }
+
+    @Override
+    public void retirar(int numero, double retiro) {
+
+    }
+
+    @Override
+    public ArrayList<Cuenta> obtenerCuentas() {
+        return cuentas;
+    }
+
+    @Override
+    public void listarCuentas() {
+        System.out.println("=".repeat(300));
+        for (Cuenta c : cuentas) {
+            System.out.println(c);
+        }
+        System.out.println("=".repeat(300));
+    }
 
 }
