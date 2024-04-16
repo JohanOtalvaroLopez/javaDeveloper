@@ -7,6 +7,7 @@ import javax.swing.plaf.synth.SynthOptionPaneUI;
 public class Principal {
     public static void main(String[] args) {
 
+        //Creación del banco
         Banco bancolombia = new Banco("Bancolombia", "Av. las vegas", "Carrera 48", "Industriales", "Antioquia", "050023", "XYZ1234", "6045109000");
         System.out.println(bancolombia);
 
@@ -37,12 +38,12 @@ public class Principal {
         bancolombia.listarClientes();
 
         //Creación de cuentas:
-        //Cuenta cuenta1 = new CuentaDeAhorro(9999, 58000000, 5.3);
-        //System.out.println(cuenta1);
-        //Cuenta cuenta2 = new CuentaDeCheque(8888, 99999999, 14500);
-        //System.out.println(cuenta2);
-        //Cuenta cuenta3 = new CuentaDeCheque(7777, 11111111, 28700);
-        //System.out.println(cuenta3);
+        Cuenta cuenta1 = new CuentaDeAhorro(9999, 58000000, 5.3);
+        System.out.println(cuenta1);
+        Cuenta cuenta2 = new CuentaDeCheque(8888, 99999999, 14500);
+        System.out.println(cuenta2);
+        Cuenta cuenta3 = new CuentaDeCheque(7777, 11111111, 28700);
+        System.out.println(cuenta3);
 
     }
 }

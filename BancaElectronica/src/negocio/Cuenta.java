@@ -1,6 +1,6 @@
 package negocio;
 
-public abstract class Cuenta {
+public abstract class Cuenta{
     private int numero;
     private String fechaApertura;
     private double saldo;
@@ -9,6 +9,15 @@ public abstract class Cuenta {
     public Cuenta(int numero, double saldo) {
         this.numero = numero;
         this.saldo = saldo;
+    }
+
+    public boolean abono(double cantidad) {
+        return true;
+    }
+
+    public boolean retiro(double cantidad) {
+        //Comprobar que tenga saldo suficiente
+        return true;
     }
 
     public int getNumero() {
