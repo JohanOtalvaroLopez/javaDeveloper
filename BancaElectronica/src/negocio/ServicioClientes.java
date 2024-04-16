@@ -1,6 +1,7 @@
 package negocio;
 
 import java.util.ArrayList;
+import java.util.Set;
 
 public interface ServicioClientes {
     boolean agregarCliente(Cliente cliente);
@@ -9,7 +10,7 @@ public interface ServicioClientes {
 
     Cliente consultarCliente(int numero);
 
-    ArrayList<Cliente> obtenerClientes();
+    Set<Cliente> obtenerClientes();
 
     Cliente buscarClientePorRfc(String rfc);
 

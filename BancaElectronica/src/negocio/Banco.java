@@ -1,20 +1,22 @@
 package negocio;
 
 import java.util.ArrayList;
+import java.util.*;
+import java.util.TreeSet;
 
 public class Banco implements ServicioClientes {
     private String nombre;
     private Domicilio domicilio;
     private String rfc;
     private String telefono;
-    private ArrayList<Cliente> clientes;
+    private Set<Cliente> clientes;
 
     public Banco(String nombre, String calle, String numero, String colonia, String estado, String codigoPostal, String rfc, String telefono) {
         this.setNombre(nombre);
         this.domicilio = new Domicilio(calle, numero, colonia, estado, codigoPostal);
         this.setRfc(rfc);
         this.setTelefono(telefono);
-        this.clientes = new ArrayList<>();
+        this.clientes = new TreeSet<>();
     }
 
     public Banco(String nombre, Domicilio domicilio, String rfc, String telefono) {
@@ -22,7 +24,7 @@ public class Banco implements ServicioClientes {
         this.setDomicilio(domicilio);
         this.setRfc(rfc);
         this.setTelefono(telefono);
-        this.clientes = new ArrayList<>();
+        this.clientes = new TreeSet<>();
     }
 
 
@@ -58,7 +60,7 @@ public class Banco implements ServicioClientes {
         this.telefono = telefono;
     }
 
-    public ArrayList<Cliente> getClientes() {
+    public Set<Cliente> getClientes() {
         return clientes;
     }
 
@@ -101,7 +103,7 @@ public class Banco implements ServicioClientes {
     }
 
     @Override
-    public ArrayList<Cliente> obtenerClientes() {
+    public Set<Cliente> obtenerClientes() {
         return clientes;
     }
 

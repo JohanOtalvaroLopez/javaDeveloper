@@ -2,7 +2,9 @@ package negocio;
 
 import java.util.*;
 
-public class Cliente implements ServicioCuentas {
+public class Cliente implements ServicioCuentas, Comparable<Cliente> {
+
+
     private int numero;
     private String nombre;
     private String apellido;
@@ -145,6 +147,26 @@ public class Cliente implements ServicioCuentas {
             System.out.println(c);
         }
         System.out.println("=".repeat(300));
+    }
+
+    //Ordenar por NOMBRE
+    //public int compareTo(Cliente o) {
+    //    return this.nombre.compareTo(o.nombre);
+    //}
+
+
+    @Override
+    //El método debe regresar -1 si va antes, 0 si son iguales y +1 si va después
+    public int compareTo(Cliente o) {
+        if (this.numero < o.numero) {
+            return -1;
+        } else {
+            if (this.numero == o.numero) {
+                return 0;
+            } else {
+                return +1;
+            }
+        }
     }
 
 }
