@@ -39,11 +39,11 @@ public class Principal {
 
         //Creación de cuentas:
         Cuenta cuenta1 = new CuentaDeAhorro(9999, 58000000, 5.3);
-        System.out.println(cuenta1);
+        //System.out.println(cuenta1);
         Cuenta cuenta2 = new CuentaDeCheque(8888, 99999999, 14500);
-        System.out.println(cuenta2);
+        //System.out.println(cuenta2);
         Cuenta cuenta3 = new CuentaDeCheque(7777, 11111111, 28700);
-        System.out.println(cuenta3);
+        //System.out.println(cuenta3);
 
 
 
