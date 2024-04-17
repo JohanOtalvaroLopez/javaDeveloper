@@ -64,8 +64,8 @@ public class Empleado extends Persona {
                 '}';
     }
 
-    @Override
-    public void hablar() {
-        System.out.println("Jefe: subame el sueldo!!!");
-    }
+    //@Override
+    //public void hablar() {
+    //    System.out.println("Jefe: subame el sueldo!!!");
+    //}
 }

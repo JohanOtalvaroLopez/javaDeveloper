@@ -3,12 +3,9 @@ package ejemplo.lambdas;
 import negocio.Banco;
 import negocio.Cliente;
 
-import java.util.function.Consumer;
-import java.util.function.Function;
-import java.util.function.Predicate;
-import java.util.function.Supplier;
+import java.util.function.*;
 
-public class Predicado {
+public class InterfacesFuncionales {
     public static void main(String[] args) {
         Predicate<String> prueba = s -> s.length() > 5;
         System.out.println("La cadena es mayor a 5 caracteres : " + prueba.test("Hola Mundo"));
@@ -31,7 +28,11 @@ public class Predicado {
         Function<String,Double> convertir = s->Double.parseDouble(s);
         System.out.println(convertir.apply("2.4")+2.6);
 
-        Supplier<StringBuilder> proveedor = ()->new StringBuilder("No tan vacío ");
+        Supplier<StringBuilder> proveedor = ()->new StringBuilder("No tan vacío, ");
         System.out.println(proveedor.get().append("si funciona!!!"));
+
+        UnaryOperator<String> cadena = s-> s.toUpperCase() + " ,cómo estás?";
+        System.out.println(cadena.apply("Edgardo Martinez Asprilla"));
+
     }
 }
