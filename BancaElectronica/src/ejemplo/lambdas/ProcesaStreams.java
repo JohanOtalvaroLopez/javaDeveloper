@@ -28,5 +28,7 @@ public class ProcesaStreams {
         origen.stream().filter(p->p.getSexo()=='F').forEach(persona -> System.out.println(persona));
         System.out.println(origen);
         lista.stream().map(p->p.getNombre()).peek(n-> System.out.println("Nombre->"+n)).filter(n->n.contains("e")).sorted().forEach(System.out::println);
+
+        lista.stream().sorted((p1,p2)->{if(p1.getSexo()<p2.getSexo()) {return -1;}else if(p1.getSexo()>p2.getSexo()) { return 1;}else return 0;}).forEach(System.out::println);
     }
 }
