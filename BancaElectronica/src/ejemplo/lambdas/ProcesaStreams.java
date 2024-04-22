@@ -3,6 +3,7 @@ package ejemplo.lambdas;
 import ejemplo.Persona;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class ProcesaStreams {
     public static void main(String[] args) {
@@ -20,6 +21,7 @@ public class ProcesaStreams {
         lista.add(new Persona("Alicia", 29, "QRO", 'F'));
         lista.add(new Persona("Jorge", 41, "VER", 'M'));
 
+        /*/
         lista.stream().filter(p->p.getEdad()>30).forEach(n-> System.out.println(n));
         lista.stream().filter(p->p.getEdad()>30).filter(p->p.getNombre().startsWith("D")).forEach(p-> System.out.println("Persona:"+p));
         lista.stream().filter(p->p.getEdad()>30 && p.getNombre().startsWith("D")).forEach(System.out::println);
@@ -30,5 +32,24 @@ public class ProcesaStreams {
         lista.stream().map(p->p.getNombre()).peek(n-> System.out.println("Nombre->"+n)).filter(n->n.contains("e")).sorted().forEach(System.out::println);
 
         lista.stream().sorted((p1,p2)->{if(p1.getSexo()<p2.getSexo()) {return -1;}else if(p1.getSexo()>p2.getSexo()) { return 1;}else return 0;}).forEach(System.out::println);
+    /*/
+        //Ordenar por género
+        lista.stream().sorted((p1, p2) -> ((Character) p1.getSexo()).compareTo(p2.getSexo())).forEach(System.out::println);
+        lista.stream().sorted((p1, p2) -> Character.compare(p1.getSexo(), p2.getSexo())).forEach(System.out::println);
+        //Ordenar por edad:
+        lista.stream().sorted((p1, p2) -> ((Integer) p1.getEdad()).compareTo(p2.getEdad())).forEach(System.out::println);
+        //Mayores o iguales de 25 años
+        System.out.println("Personas: " + lista.stream().filter(p -> p.getEdad() >= 25).count());
+        //Promedio de edad
+        OptionalDouble resultado = lista.stream().mapToInt(p -> p.getEdad()).average();
+        if (resultado.isPresent()) {
+            System.out.println("Promedio de edades: " + resultado.getAsDouble());
+        }
+        Map<String, List<Persona>> mapa = lista.stream().collect(Collectors.groupingBy(persona -> persona.getCiudadOrigen()));
+        System.out.println(mapa);
+        for (String estado : mapa.keySet()) {
+            System.out.println(estado);
+            System.out.println(mapa.get(estado));
+        }
     }
 }

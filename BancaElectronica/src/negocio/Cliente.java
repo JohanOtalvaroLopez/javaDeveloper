@@ -143,9 +143,7 @@ public class Cliente implements ServicioCuentas, Comparable<Cliente> {
     @Override
     public void listarCuentas() {
         System.out.println("=".repeat(300));
-        for (Cuenta c : cuentas) {
-            System.out.println(c);
-        }
+        cuentas.forEach(c -> System.out.println(c));
         System.out.println("=".repeat(300));
     }
 

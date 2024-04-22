@@ -124,9 +124,10 @@ public class Banco implements ServicioClientes {
     @Override
     public void listarClientes() {
         System.out.println("=".repeat(300));
-        for (Cliente c : clientes) {
-            System.out.println(c);
-        }
+        //for (Cliente c : clientes) {
+        //    System.out.println(c);
+        //}
+        clientes.forEach(c -> System.out.println(c));
         System.out.println("=".repeat(300));
     }
 }
