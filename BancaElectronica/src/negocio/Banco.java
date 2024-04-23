@@ -93,6 +93,7 @@ public class Banco implements ServicioClientes {
         for (Cliente c : clientes) {
             if (c.getNumero() == numero) {
                 System.out.println("Cliente: " + numero + ", fue encontrado.");
+                //System.out.println("Cliente: " + clientes.stream().filter(p -> p.getNumero() == numero) + "fue encontrado");
                 System.out.println(c);
                 return c;
             }
@@ -124,9 +125,6 @@ public class Banco implements ServicioClientes {
     @Override
     public void listarClientes() {
         System.out.println("=".repeat(300));
-        //for (Cliente c : clientes) {
-        //    System.out.println(c);
-        //}
         clientes.forEach(c -> System.out.println(c));
         System.out.println("=".repeat(300));
     }
