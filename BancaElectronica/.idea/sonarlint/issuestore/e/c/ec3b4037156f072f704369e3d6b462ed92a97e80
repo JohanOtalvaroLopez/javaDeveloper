@@ -1,0 +1,8 @@
+
+b
+java:S2095"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(¥”Ò 
+Q	java:S125"<This block of commented-out lines of code should be removed.(¸∑äà
+E	java:S106"+Replace this use of System.out by a logger.(ÌÂ”Éˇˇˇˇˇ
+Q	java:S125"<This block of commented-out lines of code should be removed.(√≈¡‹
+@	java:S106"+Replace this use of System.out by a logger.(Õﬂ⁄¿
+@	java:S106"+Replace this use of System.out by a logger.(•íŸë

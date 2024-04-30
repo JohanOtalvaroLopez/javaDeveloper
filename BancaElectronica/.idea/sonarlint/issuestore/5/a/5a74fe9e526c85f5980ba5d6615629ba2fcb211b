@@ -1,0 +1,20 @@
+
+}
+java:S4973r"<Strings and Boxed types should be compared using "equals()".(ôü½ÚıÿÿÿÿJ$8ce93763-8308-4418-8549-09e4e5497181
+{	java:S107"AConstructor has 8 parameters, which is greater than 7 authorized.(©Şî/J$65c46c2d-b411-4a4b-a462-204e1d2fcefd
+k	java:S106T"+Replace this use of System.out by a logger.(¹İŸŠÿÿÿÿÿJ$38c5f4bb-f23c-4e6e-89bd-cbed30e648a4
+f	java:S106U"+Replace this use of System.out by a logger.(Áß‡ÜJ$5ef9092c-97d3-4ec4-bd47-75841e17adcb
+f	java:S106_"+Replace this use of System.out by a logger.(ù¹ÅıJ$29fd2730-5ced-43c8-b4c1-c02d9ab4785c
+f	java:S106a"+Replace this use of System.out by a logger.(Áß‡ÜJ$c2a6fcc5-7314-4d98-9451-03d6fe8cd42e
+|	java:S125`"<This block of commented-out lines of code should be removed.( ÆÕıÿÿÿÿJ$ce57a919-5dad-4568-aa85-2d34fcd6a140
+f	java:S106f"+Replace this use of System.out by a logger.(ÕŒÔšJ$4600ab64-5b17-4ee5-8a2f-e7a70d5bc095
+k	java:S106s"+Replace this use of System.out by a logger.(üò¯ÆúÿÿÿÿJ$e47896c4-10fe-49c5-aa08-8b7f1a11d24a
+f	java:S106t"+Replace this use of System.out by a logger.(Áß‡ÜJ$7c4641b4-f5f1-4dfd-a15c-2de70ab3e8a9
+f	java:S106y"+Replace this use of System.out by a logger.(”ıù”J$27c4ff74-522f-4269-aebe-7d0840aace09
+f	java:S106"+Replace this use of System.out by a logger.(îµÇÎJ$c7b4fd42-2445-4054-a435-293affca2c60
+|
+java:S1612€"@Replace this lambda with method reference 'System.out::println'.(´¬J$28949654-55e4-4bf5-a131-d0c6cebb1044
+f	java:S106€"+Replace this use of System.out by a logger.(´¬J$f1ba123d-7359-4dd9-baa8-86c27dd3e7e8
+g	java:S106"+Replace this use of System.out by a logger.(îµÇÎJ$d2beeb12-6d70-4487-bdb2-4c6c3c316190
+s
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8ğ˜–åò1J$f598eec2-5055-46b5-901b-ed17f570973e

@@ -8,7 +8,7 @@ public interface ServicioClientes {
 
     boolean eliminarCliente(int numero);
 
-    Cliente consultarCliente(int numero);
+    Cliente consultaCliente(int numero);
 
     Set<Cliente> obtenerClientes();
 

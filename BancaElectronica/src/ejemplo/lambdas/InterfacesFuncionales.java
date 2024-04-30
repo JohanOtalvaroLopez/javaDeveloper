@@ -12,7 +12,7 @@ public class InterfacesFuncionales {
         Consumer<String> consumidor = cadena -> System.out.println("Consumí " + cadena);
         consumidor.accept("Refresco");
 
-        Function<Banco, Cliente> obtieneCliente = (b)-> b.consultarCliente(123456);
+        Function<Banco, Cliente> obtieneCliente = (b)-> b.consultaCliente(123456);
 
         Banco banco = new Banco("Bancolombia", "Av. las vegas", "Carrera 48", "Industriales", "Antioquia", "050023", "XYZ1234", "6045109000");
 

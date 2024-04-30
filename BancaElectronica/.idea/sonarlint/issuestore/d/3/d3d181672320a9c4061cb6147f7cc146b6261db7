@@ -1,0 +1,13 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Éİøøÿÿÿÿ
+Q	java:S125	"<This block of commented-out lines of code should be removed.(ıÚ…Â
+@	java:S106"+Replace this use of System.out by a logger.(È¤¥§
+@	java:S106"+Replace this use of System.out by a logger.(§¤â…
+@	java:S106"+Replace this use of System.out by a logger.(›Ë­â
+E	java:S106"+Replace this use of System.out by a logger.(³âò’şÿÿÿÿ
+E	java:S106"+Replace this use of System.out by a logger.(­¡Íºıÿÿÿÿ
+E	java:S106"+Replace this use of System.out by a logger.(áó öÿÿÿÿÿ
+X
+java:S1128"=Remove this unused import 'java.time.chrono.ChronoLocalDate'.(‘Ë¡°ÿÿÿÿÿ
+A
+java:S1128"+Remove this unused import 'java.util.Date'.(¸…¼ü

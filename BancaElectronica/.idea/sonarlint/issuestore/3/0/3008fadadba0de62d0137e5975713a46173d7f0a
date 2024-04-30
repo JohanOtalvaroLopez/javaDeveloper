@@ -1,0 +1,16 @@
+
+΅	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ιέψψÿÿÿÿ8Ύ„Όες1J$19785bbf-2cbe-4b54-a2d5-bf91f2c24a40
+r	java:S106"+Replace this use of System.out by a logger.(Ξ²––ÿÿÿÿÿ8­Γ»ες1J$452520bb-27d3-4547-b72a-7cbc46084a41
+r	java:S106"+Replace this use of System.out by a logger.(‡θωÿÿÿÿ8®Γ»ες1J$c0513e10-3ec8-4ced-bf7a-3d760abdad8a
+m	java:S106"+Replace this use of System.out by a logger.(Β«¨Π8―Γ»ες1J$a30582eb-ea3b-40db-bbd5-c9bbcc67089c
+ƒ	java:S125"<This block of commented-out lines of code should be removed.(οΡτώÿÿÿÿ8°Γ»ες1J$8ef756b3-5858-4363-8fe4-184805d4919e
+m	java:S106"+Replace this use of System.out by a logger.(―ζ®8±Γ»ες1J$d9fc4053-295d-4f4f-a4e9-8337719cadf1
+ƒ	java:S125"<This block of commented-out lines of code should be removed.(»Ρ£ÿÿÿÿÿ8²Γ»ες1J$d08209be-9434-494d-b5b2-fc0b62c5ffd8
+r	java:S106"+Replace this use of System.out by a logger.(€–‹€ωÿÿÿÿ8²Γ»ες1J$7be7c25a-80a3-414e-9367-465eca19b2fe
+~	java:S125"<This block of commented-out lines of code should be removed.(τ›·8³Γ»ες1J$c6dc93b7-0d41-463c-af56-3d6b8891caed
+r	java:S106 "+Replace this use of System.out by a logger.( οΠΥόÿÿÿÿ8΄Γ»ες1J$37ed1dad-336e-4ef8-95f7-ec8da811583c
+r	java:S106""+Replace this use of System.out by a logger.(·©“΅ωÿÿÿÿ8µΓ»ες1J$23887cf8-884f-4b2c-bdde-c2c9bf48f208
+‚
+java:S1128":Remove this unused import 'java.time.chrono.ChronoPeriod'.(­†θϊÿÿÿÿ8·Γ»ες1J$ccee343c-edc0-4dbc-8aaf-704dc383de6f
+{
+java:S1128"8Remove this unused import 'java.time.temporal.Temporal'.(Εƒ€φ8·Γ»ες1J$143e059a-9bec-4ae8-b05b-7884c502f28b

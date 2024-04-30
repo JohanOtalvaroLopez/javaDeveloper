@@ -78,7 +78,7 @@ public class Banco implements ServicioClientes {
 
     @Override
     public boolean eliminarCliente(int numero) {
-        Cliente c = consultarCliente(numero);
+        Cliente c = consultaCliente(numero);
         if (c != null) {
             clientes.remove(c);
             System.out.println("Cliente número: " + numero + ", fue eliminado.");
@@ -89,7 +89,7 @@ public class Banco implements ServicioClientes {
     }
 
     @Override
-    public Cliente consultarCliente(int numero) {
+    public Cliente consultaCliente(int numero) {
         for (Cliente c : clientes) {
             if (c.getNumero() == numero) {
                 System.out.println("Cliente: " + numero + ", fue encontrado.");

@@ -1,5 +1,6 @@
 package base;
 
+import integracion.DaoClientes;
 import negocio.*;
 
 import javax.swing.plaf.synth.SynthOptionPaneUI;
@@ -25,8 +26,8 @@ public class Principal {
 
         //Listo los clientes y consulto
         banco.listarClientes();
-        banco.consultarCliente(123456);
-        banco.consultarCliente(123459);
+        banco.consultaCliente(123456);
+        banco.consultaCliente(123459);
 
         //Busco por RFC
         banco.buscarClientePorRfc("XXXXXXX");
@@ -37,21 +38,21 @@ public class Principal {
         banco.eliminarCliente(888);
         banco.listarClientes();
 
-
-
-
         //Creación de cuentas:
-        /*
+
         Cuenta cuenta1 = new CuentaDeAhorro(9999, 58000000, 5.3);
         System.out.println(cuenta1);
         Cuenta cuenta2 = new CuentaDeCheque(8888, 99999999, 14500);
         System.out.println(cuenta2);
         Cuenta cuenta3 = new CuentaDeCheque(7777, 11111111, 28700);
         System.out.println(cuenta3);
-        */
 
-
-
-
+        DaoClientes dao = new DaoClientes();
+        dao.listarClientes();
+        dao.agregarCliente(c3);
+        dao.eliminarCliente(100);
+        dao.listarClientes();
+        dao.consultaCliente(7777);
+        dao.obtenerClientes();
     }
 }

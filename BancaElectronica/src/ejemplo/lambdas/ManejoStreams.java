@@ -20,6 +20,14 @@ public class ManejoStreams {
         //System.out.println(Arrays.stream(nombres).getClass().getName());
         Stream<String> listaNombres = Arrays.stream(nombres);
         listaNombres.forEach(nombre-> System.out.println(nombre));
+
+        List<Integer> numeros = new ArrayList<>();
+        numeros.add(10);
+        numeros.add(25);
+        numeros.add(7);
+        numeros.add(19);
+
+        numeros.stream().forEach(n-> System.out.println(n));
     }
 }
 

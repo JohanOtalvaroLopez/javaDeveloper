@@ -51,5 +51,15 @@ public class ProcesaStreams {
             System.out.println(estado);
             System.out.println(mapa.get(estado));
         }
+        Map<Boolean, List<Persona>> mapa2 = lista.stream().collect(Collectors.partitioningBy(t -> t.getEdad() > 25));
+//        System.out.println(mapa2);
+        Optional<Persona> encontrada = lista.stream()
+                .filter(persona -> persona.getEdad() > 27)
+                .findFirst();
+        if (encontrada.isPresent()) {
+            System.out.println(encontrada.get());
+        } else {
+            System.out.println("No se encontraron personas mayores a 27 años");
+        }
     }
 }

@@ -1,0 +1,23 @@
+
+{
+java:S18546"9Remove this useless assignment to local variable "mapa2".(ÄÇƒ8¸¿Éåò1J$bdb10010-239a-4b88-a677-6760b2dfaa82
+~	java:S125"<This block of commented-out lines of code should be removed.(§Ú¦œ8Å¿Éåò1J$35d34649-f416-4849-bf54-13727305b925
+m	java:S106%"+Replace this use of System.out by a logger.(×Ïİ¥8Ö¿Éåò1J$fba95830-da3f-4541-9cbb-aeed62790946
+r	java:S106&"+Replace this use of System.out by a logger.(Åü‚üøÿÿÿÿ8æ¿Éåò1J$f1b40a96-ba39-4eb3-85d2-649a4895804f
+r	java:S106("+Replace this use of System.out by a logger.(‚Ñÿúÿÿÿÿ8ë¿Éåò1J$7599e575-ab9c-4935-bae8-8a4c3b5c7b0a
+m	java:S106*"+Replace this use of System.out by a logger.(Îºå¬8ì¿Éåò1J$b70dbc1c-fc0a-4b67-9822-4dfc5c43c6f7
+…
+java:S1612,"=Replace this lambda with method reference 'Persona::getEdad'.(Í´è“şÿÿÿÿ8ö¿Éåò1J$a5093c7b-8b51-4594-92ca-73378afd4559
+m	java:S106."+Replace this use of System.out by a logger.(„”¶Â8†ÀÉåò1J$817de4e4-e3a9-417d-aa72-d7babd1232c3
+ˆ
+java:S16120"EReplace this lambda with method reference 'Persona::getCiudadOrigen'.(á¬ØÄ8ŠÀÉåò1J$38c374b0-cd94-4288-9fdb-0d86cbe431f1
+m	java:S1061"+Replace this use of System.out by a logger.(éáÖª8‹ÀÉåò1J$3672ac79-003e-4146-aae1-3a8a5ea5dfd2
+|
+java:S28642"4Iterate over the "entrySet" instead of the "keySet".(ßùç¯úÿÿÿÿ8ŒÀÉåò1J$9ee40035-d4b6-45c1-ac9d-a4112b266b21
+r	java:S1063"+Replace this use of System.out by a logger.(®ˆã¼úÿÿÿÿ8ÀÉåò1J$6f6727cf-89a3-4c48-8702-c81ab1d6a111
+m	java:S1064"+Replace this use of System.out by a logger.(ÃŸÍ8ÀÉåò1J$e8504af5-696a-46be-bff3-a7df34658a13
+l
+java:S14816"*Remove this unused "mapa2" local variable.(ÄÇƒ8–ÀÉåò1J$4bacc497-4642-42a6-adbc-4450fdc90f7e
+~	java:S1257"<This block of commented-out lines of code should be removed.(±’£8¦ÀÉåò1J$84db80de-f946-434f-b68a-74b3b480ff93
+r	java:S106<"+Replace this use of System.out by a logger.(œ»Ûˆüÿÿÿÿ8¶ÀÉåò1J$07cc8f71-5715-4487-9225-d7448804d57c
+r	java:S106>"+Replace this use of System.out by a logger.(±ò‹“ùÿÿÿÿ8ÅÀÉåò1J$d6b48405-f5b3-468a-a4da-ccb9f668b984

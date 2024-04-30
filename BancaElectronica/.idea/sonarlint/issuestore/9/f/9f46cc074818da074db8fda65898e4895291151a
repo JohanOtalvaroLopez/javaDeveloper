@@ -1,0 +1,11 @@
+
+E	java:S106"+Replace this use of System.out by a logger.(³¤‰Œÿÿÿÿÿ
+@	java:S106"+Replace this use of System.out by a logger.(šğ–Ó
+t
+java:S2142"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€
+E	java:S106"+Replace this use of System.out by a logger.(Ü‚¡»ıÿÿÿÿ
+E	java:S106"+Replace this use of System.out by a logger.(öĞÍıÿÿÿÿ
+@	java:S106/"+Replace this use of System.out by a logger.(ëèş“
+@	java:S1066"+Replace this use of System.out by a logger.(şòˆˆ
+K
+java:S1128"0Remove this unused import 'java.time.LocalDate'.(›‘¬èıÿÿÿÿ

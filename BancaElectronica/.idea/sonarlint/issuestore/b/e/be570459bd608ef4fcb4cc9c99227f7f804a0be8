@@ -1,0 +1,17 @@
+
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯ƒÜ
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(üşƒÀşÿÿÿÿ
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’’›Âûÿÿÿÿ
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­‰€ìıÿÿÿÿ
+Z
+java:S2095!"DUse try-with-resources or close this "Stream" in a "finally" clause.(ÊáÈ
+@	java:S106"+Replace this use of System.out by a logger.(›ÖßÄ
+E	java:S106"+Replace this use of System.out by a logger.(ìò”©üÿÿÿÿ
+E	java:S106"+Replace this use of System.out by a logger.(Ä¼–‘ÿÿÿÿÿ
+@	java:S106"+Replace this use of System.out by a logger.(×¬ Ê
+V	java:S125"<This block of commented-out lines of code should be removed.(êùõÆúÿÿÿÿ
+@	java:S106 "+Replace this use of System.out by a logger.(‚ñïÂ
+E	java:S106""+Replace this use of System.out by a logger.(Æşáèÿÿÿÿÿ
+E	java:S106$"+Replace this use of System.out by a logger.(Ó‚—½ûÿÿÿÿ
+E	java:S106+"+Replace this use of System.out by a logger.(Şêóòÿÿÿÿÿ
+@	java:S106,"+Replace this use of System.out by a logger.(óØáâ

@@ -1,0 +1,15 @@
+
+†
+java:S1192"JDefine a constant instead of duplicating this literal "Antioquia" 3 times.(œ±ÀäJ$ddcaa046-c98e-40c0-9fdb-708bbf63d160
+k	java:S106"+Replace this use of System.out by a logger.(ÊıÈôıÿÿÿÿJ$95b3104e-4eca-4f26-b087-6edab509f612
+k	java:S106"+Replace this use of System.out by a logger.(‚ğÖƒùÿÿÿÿJ$45452203-6f03-4683-9631-44c0fb70950a
+p
+java:S1611"/Remove the parentheses around the "b" parameter(¶ÎºêşÿÿÿÿJ$670a5496-5d7f-4817-9a09-91fba1a94b2e
+f	java:S106"+Replace this use of System.out by a logger.(û¢¿çJ$90ed884e-fc96-4759-8c90-ee255a856954
+Ÿ
+java:S4276"^Refactor this code to use the more specialised Functional Interface 'ToDoubleFunction<String>'(œÈçİşÿÿÿÿJ$1f62ef5d-c202-42d7-b169-3a296ec3e444
+
+java:S1612"@Replace this lambda with method reference 'Double::parseDouble'.(œÈçİşÿÿÿÿJ$0c263aff-66c4-4c0e-80e7-66f3d74ff862
+k	java:S106"+Replace this use of System.out by a logger.(‡¡¤”şÿÿÿÿJ$109b4968-3067-4aae-a773-7911ea0aabfd
+k	java:S106 "+Replace this use of System.out by a logger.(ÀÖ¬ˆşÿÿÿÿJ$c4043a21-a7aa-4116-a796-9d0a7f5d0e97
+f	java:S106#"+Replace this use of System.out by a logger.(ĞóÃ¥J$26b3592d-05af-4fea-a34e-4b50422532c9
